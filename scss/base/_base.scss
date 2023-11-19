@@ -10,7 +10,14 @@ body {
 a {
 	color: $white;
 	transition: all 0.2s ease-in;
+
 	&:hover {
 		color: $accent;
 	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 1140px;
 }
