@@ -136,6 +136,10 @@ a:hover {
   width: 1140px;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,6 +188,12 @@ a:hover {
           transform: translate(-50%, 0%);
 }
 
+.header__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 133px;
+}
+
 .nav {
   font-size: 14px;
 }
@@ -200,15 +210,20 @@ a:hover {
 .info {
   position: relative;
   font-size: 18px;
+}
+.info--map, .info--tel {
   padding-left: 35px;
 }
-.info::before {
+.info--map::before, .info--tel::before {
   content: "";
   position: absolute;
   left: 0px;
   top: 0px;
   width: 21px;
   height: 21px;
+  background-repeat: no-repeat;
+}
+.info--map::before {
   background-image: url(./../img/header/map.svg);
   background-repeat: no-repeat;
 }
