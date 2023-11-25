@@ -19,11 +19,17 @@
 	}
 }
 
-.fotm__privacy {
+.form__privacy {
 	font-size: 13px;
-	line-height: 1.23;
 	color: $muted;
 	text-align: center;
+	line-height: 1.23;
+
+	&--bottom {
+		@include mediaTablet {
+			grid-row: 4 / 5;
+		}
+	}
 }
 
 .form__btn {
